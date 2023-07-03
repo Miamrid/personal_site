@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>My personal website</title>
+    <style>
+         
+
+        .bg{
+            background-image: url("bg.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .navbar {
+            background-color: #df86dc;
+            
+            padding: 10px 20px;
+            position:fixed;
+            top:0;
+            width:100%;
+            z-index:9999;
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-logo img {
+            height: 40px;
+        }
+
+        .navbar-menu {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar-container {
+                flex-wrap: wrap;
+            }
+
+            .navbar-logo {
+                margin-bottom: 10px;
+            }
+
+            .navbar-menu {
+                flex-direction: column;
+            }
+        }
+
+        .carousel-item {
+            width: 25px;
+        }
+
+        
+        
+        .logosimg{
+            width: 50px;
+
+        }
+        .logos{
+                display: flex;
+                align-items:center;
+
+        }
+
+        
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        .carousel-item active img{
+            align-items: center;
+        }
+
+        
+    </style>
+</head>
+
+
+<nav class="navbar">
+    <div class="navbar-container" style=" width:100%     ">
+        <a class="navbar-logo" href="#">
+            <img src="logo.jpg" alt="myLogo">
+        </a>
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="#myCarousel">Home</a></li>
+            <li class="navbar-item"><a href="#About me" style="scroll-behavior: smooth;">About me</a></li>
+    
+        </ul>
+    </div>
+</nav>
+<body>
+
+    
+    
+
+    <div class="carousel" style="top:60px;">
+     
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="cbg.jpg" alt="Image 1" >
+                </div>
+                <div class="carousel-item">
+                    <img src="cbg.jpg" alt="Image 2">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="About me" class="register" style="display: flex;flex-direction: column;align-items: center; margin:100px;">
+        <h2 style="font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;"> About Me</h2> 
+        <br>
+        <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;"> Hello there! I'm Mridula Manoj, a passionate beginner in the exciting world of front-end development. I'm thrilled to be embarking on this journey and eager to create visually stunning and user-friendly websites. <br>
+
+            I've always had a fascination with technology and its ability to bring ideas to life. As I delved deeper into the digital realm, I discovered my love for web design and development. With a strong desire to blend creativity and functionality, I found front-end development to be the perfect outlet for my skills and interests. <br>
+            
+            Although I'm still in the early stages of my front-end development career, I'm constantly seeking new opportunities to learn and grow. I'm enthusiastic about staying up-to-date with the latest trends and technologies in the field. The rapidly evolving nature of web development challenges me to push my boundaries and constantly improve my skills. <br>
+            
+            I believe that effective web design is not just about aesthetics but also about creating seamless user experiences. My goal is to craft websites that not only look visually appealing but also provide intuitive navigation and optimal performance across different devices and browsers.<br>
+            
+            I have a solid foundation in HTML, CSS, and JavaScript, and I'm constantly expanding my knowledge by exploring frameworks such as React and Vue.js. I enjoy experimenting with different design concepts, leveraging my creativity to bring unique ideas to the digital realm. <br>
+            
+            Collaboration and continuous learning are two values I hold dear. I'm always excited to work with talented individuals who share my passion for creating exceptional web experiences. I believe that by collaborating with others, we can achieve remarkable results and push the boundaries of what's possible in web development. <br>
+            
+            When I'm not coding or designing, you can find me seeking inspiration in various forms, such as exploring nature, browsing design blogs, or attending web development conferences. These experiences fuel my creativity and help me bring fresh perspectives to my work.<br>
+            
+            I'm excited to connect with like-minded individuals, learn from experts in the field, and contribute to the ever-growing web development community. If you have a project or idea you'd like to collaborate on or simply want to chat about front-end development, feel free to reach out. Let's create remarkable digital experiences together! <br>
+            
+            Thank you for visiting my website, and I look forward to connecting with you soon. <br> <br> Sincerely, <br> Mridula </h3><br/>
+       
+    </div>
+    
+    
+</body>
+
+<footer style="display:flex; justify-content:center; background-color: #c267aa;">
+
+    <div class="logos">
+        <div id="division1" class="division">
+            <a href="https://whatsapp.com">
+                <img class="logosimg" src="whatsapp.jpeg" alt="Logo 1">
+            </a>
+        </div>
+        <div id="division2" class="division">
+            <a href="https://instagram.com">
+                <img class="logosimg" src="instagram.jpeg" alt="Logo 2">
+            </a>
+        </div>
+        <div id="division3" class="division">
+            <a href="https://youtube.com">
+                <img class="logosimg" src="youtube.png" alt="Logo 3">
+            </a>
+        </div>
+        <div id="division4" class="division">
+            <a href="https://twitter.com">
+                <img class="logosimg" src="twitter.png">
+            </a>
+        </div>
+    </div>  
+
+    
+<h1 style="border:rgb(7, 7, 7) solid; border-top:0px; border-bottom:0px; border-right:0px; ">MyWebsite</h1>
+</footer>
+
+</html>
